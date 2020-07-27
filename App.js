@@ -18,7 +18,7 @@ import {
 } from 'react-native';
 
 
-import { CardView } from './src/CardView';
+import { CardView } from './src/cardview/CardView';
 import { CardItem } from './src/CardItem'
 
 
@@ -28,7 +28,6 @@ const App = () => {
     <View style={styles.container}>
       <SafeAreaView />
       <CardView />
-
     </View>
   );
 }
@@ -37,7 +36,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "row",
-    alignItems: 'center'
+    alignItems: 'stretch'
   },
   scrollview: {
     height: 280,
